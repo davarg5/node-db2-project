@@ -10,7 +10,11 @@ exports.up = function(knex) {
     // model
     table.text('model', 128).notNullable();
     // mileage
-    table.decimal('mileage');
+    table.decimal('mileage').notNullable();
+    // transmission type
+    table.text('transmissionType', 128);
+    // titleStatus
+    table.text('titleStatus', 128);
   });
 };
 
